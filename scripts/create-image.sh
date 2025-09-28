@@ -102,7 +102,7 @@ export LDFLAGS="-lstdc++fs -L/usr/lib/gcc/aarch64-meego-linux-gnuabi/8.3.0/"
 
 echo "Create super.img..."
 kib=$((2**10)); mib=$((2**20))
-super_max_size=$((7168*$mib))
+super_max_size=$((9216*$mib))
 group_size=$((super_max_size-$((4*$mib))))
 root_size=$((group_size-$((4*$mib))))
 ./lpunpack_and_lpmake/bin/lpmake \
